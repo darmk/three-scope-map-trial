@@ -1,0 +1,79 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+dist-ssr/
+*.tsbuildinfo
+
+# Vite and tool caches
+.vite/
+.cache/
+.parcel-cache/
+.eslintcache
+
+# Tests and coverage
+coverage/
+playwright-report/
+test-results/
+.nyc_output/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Local environment files and secrets
+.env
+.env.*
+!.env.example
+*.local
+
+# Editor and IDE settings
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*~
+
+# Operating-system files
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Temporary and backup files
+tmp/
+temp/
+work/
+*.tmp
+*.temp
+*.bak
+*.backup
+*.orig
+
+# Local browser/debug artifacts
+screenshots/
+traces/
+*.trace.zip
+
+# Local assistant/workspace metadata
+.codex/
+.claude/
+.cursor/
+
+# Keep source maps, textures, GeoJSON, and lockfiles tracked.
+!src/assets/maps/**
+!src/assets/textures/**
+!package-lock.json
+!pnpm-lock.yaml
