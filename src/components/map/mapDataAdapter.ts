@@ -63,7 +63,8 @@ export async function loadMapLevel(scope: MapScope, code: string) {
     let lastError: unknown;
     for (const url of datavUrls(code, scope)) {
       try {
-        const response = await fetch(url);
+        // geo.datav.aliyun.com 有防盗链：带 Referer 请求会返回 403，必须禁掉 Referer
+        const response = await fetch(url, { referrerPolicy: 'no-referrer' });
         if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
         const loadedGeoJson = await response.json() as GeoFeatureCollection;
         geoJsonCache.set(cacheKey, loadedGeoJson);

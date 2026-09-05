@@ -2,6 +2,34 @@
 
 这是一个基于 Vue 3、TypeScript、Vite、Three.js 和 GSAP 的最小可运行示例。页面打开后先显示真实 Three.js 地球，点击中国区域后经过云层下钻动画进入中国 3D 地图，并支持继续下钻到省、市、区县。
 
+## 在线演示
+
+**访问地址**：<http://219.151.188.86:81/threeScopeMapTrial/>
+
+## 效果预览
+
+地球首屏（星空、真实昼夜纹理、中国高程、国际飞线）：
+
+![地球首屏](docs/preview/01-earth.png)
+
+点击中国后穿越云层下钻进入中国 3D 地图（动态效果）：
+
+![地球下钻进入中国地图](docs/preview/earth-to-china.gif)
+
+中国 3D 地图（挤出侧墙、省界标签、飞线与追光，动态效果）：
+
+![中国地图飞线](docs/preview/china-flylines.gif)
+
+中国国家级地图全貌：
+
+![中国 3D 地图](docs/preview/02-china.png)
+
+继续下钻到省级（江苏）地图，含市级标签与飞线：
+
+![省级下钻](docs/preview/03-province.png)
+
+> 预览图与 GIF 由 `scripts/capture_preview.cjs`（截图/帧采集）和 `scripts/make_gifs.py`（GIF 合成）生成，可重新运行更新。
+
 本项目基于 [`three-scope-map`](https://github.com/songsummer920-dazzle/three-scope-map-skill) 技能内置的 `assets/templates/smart-mine-vue` 模板完成，没有用截图、SVG 平面图或重新编写的简化渲染器替代模板实现。
 
 > 许可证与归属：`SPDX-License-Identifier: GPL-3.0-or-later`。原始项目作者全平台 ID：宋夏天Dazzle；公众号：送你整个夏天。发布或二次分发时请保留源码中的许可证、原始仓库地址和归属注释。
